@@ -38,7 +38,6 @@ public class Window extends Application implements Runnable {
 
         this.pane.getChildren().add(this.canvas);
         primaryStage.setScene(this.scene);
-        //primaryStage.setOnCloseRequest(exit);
     }
 
     private void myDraw(GraphicsContext gc) {

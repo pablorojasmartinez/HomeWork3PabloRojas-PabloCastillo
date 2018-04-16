@@ -33,7 +33,7 @@ public class LineExample extends JPanel {
 
         int i = 0;
 
-        while (i <1000) {
+        while (i < 1000) {
 
             int red = (int) ((Math.random() * 255) + 0);
             int green = (int) ((Math.random() * 255) + 0);
@@ -42,11 +42,6 @@ public class LineExample extends JPanel {
             Color color = new Color(red, green, blue);
             g.setColor(color);
 
-//            System.out.println(red + " " + green + " " + blue);
-//
-//            System.err.println(i);
-            //x0 y y0 son los puntos de inicio
-            //x1 y y1 son los puntos de llegada
             int x0 = (int) ((Math.random() * this.getWidth())); // Para que haga números no superiores al ancho
             int y0 = (int) ((Math.random() * this.getHeight())); // Para que haga números no superiores al alto
 
@@ -55,10 +50,6 @@ public class LineExample extends JPanel {
 
             int pointX = x1 - x0;
             int pointY = y1 - y0;
-
-//            System.out.println("x1:" + x0 + " " + "x2:" + x1 + " " + "y1:" + y0 + " " + "y2:" + y1);
-//            System.out.println("dx: " + pointX + " dy: " + pointY + "\n");
-          //  g.drawLine(x0, y0, x0, y0);
 
             if (Math.abs(pointX) > Math.abs(pointY)) {          // Si la pendiente es negativa 
                 float m = (float) pointY / (float) pointX;
